@@ -1,0 +1,48 @@
+
+\documentclass{article}
+
+\usepackage{titling}
+\usepackage{titlesec}
+\usepackage[margin=.5in]{geometry}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{metalogo}
+\usepackage{xifthen}
+\usepackage[colorlinks=true,urlcolor=Blue]{hyperref}
+\usepackage{graphicx}
+\usepackage{fontspec}
+\usepackage[T1]{fontenc}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{libertine}
+\usepackage{parskip}
+\usepackage{framed}
+
+\usepackage{longtable}  % table
+
+\usepackage{booktabs}
+\usepackage{makecell}
+
+% Custom section spacing and formatting
+\titleformat{\part}{\Huge\scshape\filcenter}{}{1em}{}
+\titleformat{\section}{\Large\bf\raggedright}{}{1em}{}[{\titlerule[2pt]}]
+\titlespacing{\section}{0pt}{3pt}{7pt}
+\titleformat{\subsection}{\large\bfseries\centering}{}{0em}{\underline}%[\rule{3cm}{.2pt}]
+\titlespacing{\subsection}{0pt}{7pt}{7pt}
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% fix shaded undefine for code block
+$if(highlighting-macros)$
+$highlighting-macros$
+$endif$
+
+\begin{document}
+    
+$body$
+
+\end{document}
+
+
